@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    tools:context=".ListCoffee">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="Choose Your Cafe"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/serch"
+            android:layout_width="178dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="enter cafename"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/serachbutton"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-15dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/background1"
+            android:drawableTop="@drawable/search"
+            android:paddingTop="15dp" />
+
+        <Button
+            android:id="@+id/fillterbutton"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/background1"
+            android:drawableTop="@drawable/fillter"
+            android:paddingLeft="25dp"
+            android:paddingTop="15dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/cafelist"
+        android:layout_width="match_parent"
+        android:layout_height="595dp"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="119dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="140dp"
+        android:background="@drawable/background1"
+        android:onClick="btn_logout"
+        android:text="log out"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+</LinearLayout>

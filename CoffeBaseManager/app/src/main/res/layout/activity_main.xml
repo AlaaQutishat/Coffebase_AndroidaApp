@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="810dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/coffebaselogo" />
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint=" Enter Your Email"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:textColor="#909097"
+            android:textColorHint="#9D9DA2" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint=" Enter your Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingEnd="5dp"
+            android:textColor="#909097"
+            android:textColorHint="#9D9DA2" />
+
+
+        <ImageView
+            android:id="@+id/showpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginBottom="7dp"
+            android:layout_toRightOf="@+id/password"
+            app:srcCompat="@drawable/showpassword" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="370dp"
+            android:indeterminateTint="#740017" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded"
+            android:text="Login"
+            android:textColor="#909097"
+            android:textSize="22sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/forgetpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="-35dp"
+            android:text="Forget Your Password ?"
+            android:textColor="#CE2C2E"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="815dp"
+        android:background="#797980" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="820dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="244dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:text="Don't Have A CoffeeBase Account ?"
+            android:textColor="#909097"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="SignUp"
+            android:textColor="#CE2C2E"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

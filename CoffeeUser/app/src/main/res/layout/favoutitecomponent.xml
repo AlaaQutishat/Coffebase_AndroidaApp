@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circuleimage"
+            android:layout_width="85dp"
+            android:layout_height="96dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logo2"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="36dp" />
+        <TextView
+            android:id="@+id/typee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="-95dp"
+            android:text="TextView"
+            android:textColor="#fdd306"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/pricee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="-21dp"
+            android:text="2jd"
+            android:textColor="#fdd306"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/calouries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30dp"
+            android:text="Calories"
+            android:textColor="#fdd306"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/caloriess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="-18dp"
+            android:text="34"
+            android:textColor="#fdd306"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

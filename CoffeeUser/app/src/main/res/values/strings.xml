@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">CoffeeBase</string>
+
+    <string name="input_error_name">name required</string>
+    <string name="input_error_email">email required</string>
+    <string name="input_error_password">password required</string>
+    <string name="input_error_email_invalid">enter a valid email</string>
+    <string name="input_error_password_length">password should be at least 6 characters long</string>
+
+    <string name="registration_success">Registered Successfully</string>
+
+    <string name="title_activity_slidemenu">Slidemenu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Menu</string>
+    <string name="menu_gallery">Hot Drinks</string>
+    <string name="menu_slideshow">Cold Drinks</string>
+    <string name="menu_tools">Desserts</string>
+    <string name="menu_share">Main Course</string>
+    <string name="menu_send">Send</string>
+    <string name="textview">TextView</string>
+
+    <string-array name="menu">
+        <item>Nescaffe</item>
+        <item>Coffee</item>
+        <item>Slush</item>
+        <item>Milkshake</item>
+        <item>Water</item>
+    </string-array>
+</resources>

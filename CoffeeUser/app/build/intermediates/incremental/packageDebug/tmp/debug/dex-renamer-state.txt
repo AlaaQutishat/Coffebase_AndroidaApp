@@ -1,0 +1,7 @@
+#Tue Jun 30 16:02:58 EEST 2020
+base.0=E\:\\22\\last\\gradute project (1)\\CoffeeUser\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=E\:\\22\\last\\gradute project (1)\\CoffeeUser\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex

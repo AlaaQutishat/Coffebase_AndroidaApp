@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hi"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/babout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="467dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="18dp"
+        android:alpha=".6"
+        android:background="@drawable/buttonedits"
+        android:text="About us"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/boffers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bmenu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bmenu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="467dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:alpha=".6"
+        android:background="@drawable/buttonedit"
+        android:text="Menu"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/favourite"
+        app:layout_constraintEnd_toStartOf="@+id/babout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/favourite"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="86dp"
+        android:alpha=".6"
+        android:background="@drawable/buttonedit"
+        android:text="Favourite"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/boffers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmenu"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/boffers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="86dp"
+        android:alpha=".6"
+        android:background="@drawable/buttonedits"
+        android:text="Offers"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/favourite"
+        app:layout_constraintTop_toBottomOf="@+id/babout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

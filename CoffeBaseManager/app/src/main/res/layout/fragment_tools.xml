@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="725dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/imagg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/profile" />
+
+            <ImageView
+                android:id="@+id/imagee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/imagerounded" />
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="231dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="2dp"
+            android:ems="10"
+            android:hint="07########"
+            android:inputType="number|phone"
+            android:phoneNumber="true"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30dp"
+            android:paddingLeft="4dp"
+            android:text=" Phone Number :"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="274dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="30dp"
+            android:text="How Many Seats Do You Have ? "
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textStyle="bold" />
+
+        <NumberPicker
+            android:id="@+id/seat"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="-50dp"
+            android:background="#909097"
+            android:solidColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/study"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="0dp"
+            android:text="study">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Suitable for study ? "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/studyyes"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/studyno"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="-30dp"
+                android:text="No"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/smoke"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Is there a place for non-smokers?"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/smokeyes"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/smokeno"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="-30dp"
+                android:text="No"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/parking"
+            android:layout_width="275dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Do you have a parking lot ?"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/parkingyes"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/parkingno"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="-30dp"
+                android:text="No  "
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="233dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:text="Open and close hours :"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="From : "
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <NumberPicker
+            android:id="@+id/open"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="-30dp"
+            android:background="#909097"
+            android:solidColor="#000000"></NumberPicker>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="To : "
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <NumberPicker
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="-20dp"
+            android:background="#909097"
+            android:solidColor="#000000"></NumberPicker>
+
+        <Spinner
+            android:id="@+id/spinneropen"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="-130dp" />
+
+        <Spinner
+            android:id="@+id/spinnerclose"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="730dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="39dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="#10000000"
+            android:drawableLeft="@drawable/saveee222"
+            android:onClick="save"
+            android:paddingLeft="20dp"
+            android:paddingTop="3dp"
+            android:text="Add/Edit"
+            android:textColor="#909097"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

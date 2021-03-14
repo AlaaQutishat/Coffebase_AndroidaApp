@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.coffeeuser">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo01"
+        android:supportsRtl="true"
+        android:debuggable="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".favourite"></activity>
+        <activity android:name=".OffersView" />
+        <activity
+            android:name=".Order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CoffeHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListCoffee"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Slidemenu"
+            android:label="@string/title_activity_slidemenu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserLogIn"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

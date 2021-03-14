@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c252d"
+    tools:context=".ui.Report">
+
+    <TextView
+        android:id="@+id/Salesreport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="64dp"
+        android:text="Sales Report"
+        android:textAlignment="center"
+        android:textColor="#fdd306"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="79dp"
+        android:text="Select Date"
+        app:layout_constraintEnd_toStartOf="@+id/salesdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/salesdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/Salesreport" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/l1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Salesreport">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="name"
+            android:textColor="#fdd306" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="price"
+            android:textAlignment="center"
+            android:textColor="#fdd306" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="count"
+            android:textAlignment="center"
+            android:textColor="#fdd306" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="allprice"
+            android:textAlignment="center"
+            android:textColor="#fdd306" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/l1"
+        android:layout_width="421dp"
+        android:layout_height="575dp"
+        android:layout_marginBottom="41dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="142dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Total "
+        android:textAlignment="center"
+        android:textColor="#fdd306"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/totalprice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l1"
+        app:layout_constraintVertical_bias="0.692"></TextView>
+
+    <TextView
+        android:id="@+id/totalprice"
+        android:layout_width="173dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="5dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#fdd306"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/total"
+        app:layout_constraintTop_toBottomOf="@+id/l1"
+        app:layout_constraintVertical_bias="0.618"></TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
